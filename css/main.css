@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@font-face {
+   font-family: 'RixYeoljeongdo_Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: 'Eulyoo1945-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: 'Eulyoo1945-SemiBold';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+   font-weight: normal; font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식B';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식M';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: '국립박물관문화재단클래식L';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+*{ font-family: 'Noto Sans KR', '맑은 고딕', sans-serif; padding: 0; margin: 0; color: #666;}
+li{ list-style: none; }
+a{text-decoration: none; }
+button{ cursor: pointer; }
+
+
+
+/* popup */
+.popup{
+   position: fixed; z-index: 50000;
+   left: 0; right: 0; top: 0; bottom: 0; margin: auto;
+   width: 490px; height: 660px; text-align: center;
+   background-color: #fff; border: 1px solid #717171; 
+}
+.p_top .notice{ width: 100%; height: 440px; padding-top: 50px; }
+.p_top .mobile{ width: 100%; height: 175px; }
+.p_bottom{ width: 100%; height: 45px; background-color: #848abd; }
+
+.popup h2{ font-size: 40px; letter-spacing: 4px; font-weight: 800; color: #848abd; }
+.p_top .notice h2{ margin-bottom: 10px; }
+.p_top p{ font-size: 20px; line-height: 35px; color: #717171; }
+.p_top .notice span{ font-weight: 500; color: #848abd; }
+
+.p_top .mobile{ float: left; width: 305px; height: 100%; text-align: left; padding-left: 50px; }
+.p_top .mobile h2{ margin-bottom: 10px; }
+.p_top img{ float: right; width: 140px; height: 140px; margin-right: 30px; }
+
+.p_bottom{ 
+   float: left; position: relative; bottom: -35px; padding-left: 20px; 
+   text-align: left; height: 45px; line-height: 45px;
+}
+#chkBox{ width: 15px; height: 15px; margin-right: 5px; position: relative; top: 1px; }
+.p_bottom label{ color: #fff; font-size: 18px; }
+.p_bottom a{ float: right; text-align: right; padding-right: 25px; color: #fff; font-size: 18px; }
+
+
+
+/* LAYOUT */
+.main{ width: 100%; height: 600px;  }
+.new{ width: 1120px; height: 460px; margin: 0 auto; position: relative; }
+.best{ width: 1120px; height: 495px; margin: 0 auto; margin-bottom: 200px; position: relative; }
+.award{
+   width: 100%; height: 725px; margin-bottom: 200px; position: relative;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bababa+0,bababa+60,bababa+100&1+0,0+100 */
+   background: -moz-linear-gradient(left,  rgba(186,186,186,1) 0%, rgba(186,186,186,0.4) 60%, rgba(186,186,186,0) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  rgba(186,186,186,1) 0%,rgba(186,186,186,0.4) 60%,rgba(186,186,186,0) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  rgba(186,186,186,1) 0%,rgba(186,186,186,0.4) 60%,rgba(186,186,186,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#00bababa',GradientType=1 ); /* IE6-9 */
+}
+.subscription{ width: 1320px; height: 500px; margin: 0 auto; }
+.bookclub{ width: 100%; height: 855px; margin: 200px 0; padding-top: 100px; background-image: url(../images/main/bookclub/bookclub_bg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.brandstory{ width: 100%; height: 600px; margin-top: 150px; text-align: center; padding-top: 100px; background-image: url(../images/main/brandstory/brandstory_bg); background-repeat: no-repeat;background-position: center; background-size: cover; }
+.new01, .new02, .new03, .new02_hover, .new03_hover{ float: left; width: 203px; height: 300px; margin-right: 250px;  animation: move 0.5s; }
+.best01, .best02, .best03, .best02_hover, .best03_hover{ float: left; width: 200px; height: 336px; margin-right: 252px; }
+.littor, .hanpyeon{ float: left; width: 400px; height: 500px; margin-right: 60px; background-color: black;}
+.eback{ float: right; width: 400px; height: 500px; }
+
+
+
+
+
+/* main image slider */
+.main .swiper-container{ width: 100%; height: 100%; }
+.main .swiper-wrapper{ height: 100%; }
+.main .swiper-slide{ height: 100%; }
+.main .swiper-pagination-bullet{ opacity: 1; width: 3px; height: 25px; background-color: #fff; border-radius: 3px;  }
+.main .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{ margin: 0 10px; }
+.main .swiper-pagination-bullet-active{ transform: rotate(40deg); }
+
+
+/* slide01 */
+.slide01{ overflow: hidden; width: 100%; height: 100%; background-image: url(../images/main/main/main01_bg.png); background-repeat: no-repeat; background-size: cover; }
+.slide01 .wrap .text_box{ width: 1320px; height: 600px; background-color: rgba(118, 121, 160, 0.4); padding-top: 145px; padding-left: 70px; }
+.slide01 .wrap img{ float: right; position: relative; top: -100px; right: 60px; }
+.slide01 .wrap h2{ font-size: 40px; color: #fff; font-weight: 500; }
+.slide01 .wrap h2 span{ font-size: 60px; color: #fff; }
+.slide01 .wrap p{ font-size: 30px; line-height: 60px; color: #fff; margin-top: 65px; }
+.slide01 .wrap p span{ font-size: 20px; color: #fff; position: relative; left: 670px; }
+
+/* slide02 */
+.slide02{ overflow: hidden; width: 100%; height: 100%; z-index: 10; background-image: url(../images/main/main/main_img02_bg.png); background-repeat: no-repeat; background-size: cover; }
+.slide02 .wrap .book{ float: left; margin-top: 65px; }
+.slide02 .wrap .books{ float: right; position: relative; top: 115px; right: 50px;}
+.slide02 .wrap h2, .slide02 .wrap p, .slide02 .wrap span{ float: left; color: #fff; font-weight: 500; }
+.slide02 .wrap h2{ font-size: 30px; line-height: 45px; margin: 150px 0 50px 65px; }
+.slide02 .wrap p, .slide02 .wrap p span{ font-size: 24px; line-height: 40px; margin-left: 65px; }
+.slide02 .wrap p span{ position: relative; left: 300px; }
+
+/* slide03 */
+.slide03{ overflow: hidden; width: 100%; height: 100%; background-color: #f35001; }
+.slide03 .wrap img{ float: left; position: relative; left: -480px; }
+.slide03 .wrap .writer{ float: right; position: relative; left: 160px; top: 80px; z-index: 10;}
+.slide03 .wrap .text_wrap{ float: left; width: 750px; height: 380px; text-align: center; position: relative; top: -500px; left: 370px; background-color: #fff; }
+.slide03 .text_wrap h2, .slide03 .text_wrap p, .slide03 .text_wrap p span{ font-family: 'RixYeoljeongdo_Regular'; color: #f35001; font-weight: 500; }
+.slide03 .text_wrap h2{ font-size: 45px; margin-top: 60px; }
+.slide03 .text_wrap p{ font-size: 26px; line-height: 42px; margin-top: 60px; }
+.slide03 .text_wrap p span{ font-style: italic; }
+.slide03 .wrap .line_box{ position: relative; top: 110px; left: 400px; width: 740px; height: 380px; border: 1px solid #fff; }
+
+/* button */
+.swiper-button-prev::after, .swiper-button-next::after{ display: none; }
+.swiper-button-next .arrow{ position: absolute; left: -180px; }
+.swiper-button-prev .arrow{ position: absolute; right: -180px; }
+.swiper-button-next .circle{ position: relative; left: -60px; opacity: 0; }
+.swiper-button-prev .circle{ position: relative; right: -60px; opacity: 0; }
+.swiper-button-next:hover .circle{ opacity: 1; transition: 0.3s; }
+.swiper-button-prev:hover .circle{ opacity: 1; transition: 0.3s; }
+
+/* pagination */
+.swiper-pagination-custom{ width: 10px; height: 4px; background-color: #fff; }
+
+
+
+
+/* new */
+.new01 figcaption, .new02 figcaption, .new03 figcaption{ display: none; z-index: 30; position: absolute; left: 252px; top: 90px; width: 870px; height: 310px; background-color: #f8f8f8; }
+.new h2{ position: relative; left: 20px; margin: 100px 0 50px 0; text-align: center; font-size: 30px; font-weight: 500; letter-spacing: 40px; }
+.new03{ float: right; margin-right: 0; margin-bottom: 65px; }
+.new figcaption .title{ position: absolute; top: 80px; left: 60px; font-size: 26px; height: 30px; line-height: 30px; font-weight: 700; }
+.new figcaption .writer{ position: absolute; top: 125px; left: 60px; font-size: 20px; height: 30px; line-height: 30px; font-weight: 500; color: #818181; }
+.new figcaption .price{ position: absolute; top: 215px; left: 270px; font-size: 18px; height: 30px; line-height: 30px; font-weight: 500; color: #818181; }
+.new figcaption .summary{ float: right; position: absolute; top: 30px; right: 70px; font-size: 12px; height: 21px; line-height: 21px; font-weight: 500; }
+.new .summary span{ font-size: 16px; height: 21px; line-height: 21px; font-weight: 500; }
+.new .line{ position: absolute; bottom: 0; border-radius: 7px; width: 100%; height: 13px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+
+/* hover effect */
+.new01:hover{ box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); transition: 0.3s; }
+.new01 .figcaption01 .triangle02, .new02 .figcaption02 .triangle02, .new03 .figcaption03 .triangle02{ position: absolute; bottom: 0; right: 0px; }
+.new02_hover, .new03_hover{ display: none; position: absolute; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); }
+
+
+
+/* best */
+.best h2{ text-align: center; font-size: 30px; font-weight: 500; margin: 100px 0 50px 0; }
+.best03{ float: right; margin-right: 0; }
+.best01 figcaption, .best02 figcaption, .best03 figcaption{ position: absolute; left: 252px; top: 90px; display: none; z-index: 30; width: 870px; height: 345px; background-color: #f8f8f8; }
+.best01 a:hover figcaption, .best02 a:hover figcaption, .best03 a:hover figcaption{ display: block; }
+.best .triangle02{ position: absolute; bottom: 0; right: 0; }
+.best figcaption .title{ position: absolute; top: 80px; left: 60px; font-size: 26px; height: 30px; line-height: 30px; font-weight: 700; }
+.best figcaption .writer{ position: absolute; top: 125px; left: 60px; font-size: 20px; height: 30px; line-height: 30px; font-weight: 500; color: #818181; }
+.best figcaption .price{ position: absolute; top: 215px; left: 270px; font-size: 18px; height: 30px; line-height: 30px; font-weight: 500; color: #818181; }
+.best figcaption .summary{ float: right; position: absolute; top: 45px; right: 70px; font-size: 12px; height: 21px; line-height: 21px; font-weight: 500; }
+.best .summary span{ font-size: 16px; height: 21px; line-height: 21px; font-weight: 500; }
+.best .line{ width: 100%; height: 13px; position: absolute; bottom: 0; border-radius: 7px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
+
+/* hover effect */
+.best01:hover{ box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); transition: 0.3s; }
+.best02_hover, .best03_hover{ display: none; position: absolute; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); }
+
+
+
+/* award */
+.section01 img{ position: absolute; top: 0; }
+.award{ width: 100%; height: 600px; overflow: hidden; }
+.award .ksy{ font-size: 20px; height: 30px; line-height: 30px; color: #d4d3d3; position: absolute; bottom: 70px; left: 60px; }
+.award > .wrap{ position: relative; }
+.award > .wrap > .t_wrap{ float: left; width: 50%; margin-top: 120px; }
+.award > .wrap > .t_wrap > p{ font-family: 'Eulyoo1945-Regular'; font-size: 28px; line-height: 45px; color: #fff; font-weight: normal; }
+.award_book{ float: right; width: 50%; height: 100%; text-align: center; }
+.award_book li{ float: left; text-align: center; margin-top: 80px; margin-left: 20px; width: 180px; }
+.award_book li:first-child{ margin-left: 40px; }
+.award_book li img{ margin-bottom: 20px; box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.3); width: 150px; }
+.award_book li img:hover{ transform: scale(1.2); transition: 0.5s; }
+.award_book li a{ font-size: 18px; height: 30px; line-height: 30px; color: #7f7f7f; font-weight: 500; }
+.award_book span{ font-size: 22px; height: 35px; line-height: 35px; font-weight: 700; color: #7f7f7f; margin-top: 25px; }
+.award button{ margin-top: 35px; width: 220px; height: 70px; background-color: #bababa; color: #fff; font-size: 26px; font-weight: 500; border: none; border-radius: 35px; }
+.award button:hover{ background-color: #7966af; color: #fff; transition: 0.3s; cursor: pointer; }
+   
+
+
+/* subscription */
+.littor:hover, .hanpyeon:hover, .eback:hover{ box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15); transition: 0.3s }
+.subscription a{ position: relative; }
+.subscription .more_btn{ position: relative; top: -60px; right: -290px; }
+.subscription .more_btn_hover{ opacity: 0; position: absolute; top: -36px; right: -289px; }
+.subscription a:hover .more_btn_hover{ opacity: 1; transition: 0.3s; }
+
+
+
+/* bookclub */
+.bookclub{ background-image: url(../images/main/bookclub/bookclub_bg.png);}
+.bookclub h2, .bookclub h3, .bookclub h4, .bookclub li, .bookclub p{ font-family: '국립박물관문화재단클래식L'; color: #fff; text-align: center;}
+.bookclub p{ position: relative; top: -20px; }
+.bookclub h2{ font-family: '국립박물관문화재단클래식B'; font-size: 60px; height: 50px; line-height: 50px; letter-spacing: 25px; margin-bottom: 10px; }
+.bookclub h3{ font-family: '국립박물관문화재단클래식M'; font-size: 40px; height: 50px; line-height: 50px; position: relative; left: -15px; letter-spacing: 2px; }
+.bookclub .wrap{ position: relative; }
+.bookclub h4{ position: absolute; right: 300px; top: 125px; z-index: 1; font-size: 30px; width: 100px; height: 50px; line-height: 50px; background-color: #9485bf; }
+.bookclub .benefit{ font-size: 30px; width: 700px; height: 400px; border: 1px solid #fff; position: absolute; top: 150px; right: 0; z-index: 0; padding-bottom: 30px; }
+.benefit ul{ margin: 40px 0 65px 70px; }
+.benefit li{ list-style: disc; height: 50px; line-height: 50px; text-align: left; }
+.bookclub button{ position: absolute; bottom: 120px; right: 220px; width: 245px; height: 60px; background-color: #fff; font-size: 26px; font-weight: 500; height: 60px; line-height: 35px; color: #9485bf; border: none; border-radius: 35px; }
+.bookclub button:hover{ color: #fff; background-color: #7966af; transition: 0.3s; }
+
+
+
+/* sns */
+.sns_board{ width: 1320px; height: 770px; margin: 0 auto; text-align: center; }
+.sns01, .sns02, .sns03, .sns04{ float: left; width: 315px; height: 315px; margin-right: 20px; }
+.sns05, .sns06, .sns07, .sns08{ float: left; width: 315px; height: 315px; margin: 20px 20px 50px 0; }
+.sns04, .sns08{ float: right; margin-right: 0; }
+.sns_board button{ width: 430px; height: 70px; background-color: #bababa; color: #fff; font-size: 26px; font-weight: 500; border: none; border-radius: 35px; }
+.sns_board button:hover{ background-color: #7966af; transition: 0.3s; }
+.sns_board a{ display: block; overflow: hidden; width: 100%; height: 100%;}
+.sns_board img:hover{ transform: scale(1.2); transition: 0.5s; }
+
+
+
+/* brandstory */
+.brandstory{ background-image: url(../images/main/brandstory/brandstory_bg.png);}
+.brandstory h2, .brandstory p{ color: #6e6e6e; font-family: 'Eulyoo1945-Regular'; }
+.brandstory h2{ font-size: 70px; letter-spacing: 3px; margin-bottom: 80px; }
+.brandstory p{ font-size: 30px; height: 45px; line-height: 45px; text-align: left; }

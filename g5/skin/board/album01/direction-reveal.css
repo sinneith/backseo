@@ -1,0 +1,46 @@
+.direction-reveal__card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-right: 80px;
+  margin-top: 80px;
+}
+.direction-reveal__card:nth-child(3){
+   margin-right: 0;
+}
+
+.direction-reveal__title {
+  display: none;
+}
+
+.direction-reveal__text {
+   display: none;
+}
+
+.direction-reveal--3-grid-flexbox {
+   width: 1320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.direction-reveal--3-grid-flexbox .direction-reveal__card {
+  border: 10px solid transparent;
+}
+
+.direction-reveal--3-grid-cssgrid {
+  display: -ms-grid;
+  display: grid;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.direction-reveal--3-grid-cssgrid .direction-reveal__card {
+  border: 10px solid transparent;
+}
+
+.direction-reveal--grid-bootstrap .direction-reveal__card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

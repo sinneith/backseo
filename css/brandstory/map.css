@@ -1,0 +1,16 @@
+/* map */
+.map{ margin-top: 50px; margin-bottom: 50px; width: 100%; height: 500px; }
+.tab_button ul{ margin: 0 auto; width: 300px; height: 70px; border: 4px solid #b1a7d0; text-align: center; }
+.tab_button li{ width: 50%; height: 100%; font-size: 30px; float: left; line-height: 65px; border-right: 4px solid #b1a7d0; }
+.tab_button li a{ display: block; width: 100%; height: 100%; font-size: 30px; font-weight: 500; color: #b1a7d0;  }
+.tab_button li:last-child{ border-right: none; }
+.tab_button li a:active { background-color: #b1a7d0; color: #fff; }
+
+#sub_contents h4{ font-size: 32px; color: #333; margin-bottom: 10px; }
+#sub_contents > .first{ margin-top: 100px; }
+#sub_contents p{ font-size: 26px; color: #333; margin-bottom: 60px; }
+#sub_contents ul{ margin-bottom: 60px; }
+#sub_contents li{ font-size: 26px; color: #333; margin-bottom: 10px; }
+#sub_contents .qna img{ width: 40px; margin-right: 20px; position: relative; top: 13px; } 
+#sub_contents .qna li .first{ width: 35px; position: relative; top: 8px; }
+#sub_contents .qna{ margin-bottom: 200px; }

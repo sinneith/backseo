@@ -1,0 +1,19 @@
+#sub_contents .btn{ width: 1000px; height: 80px; margin: 0 auto; background-color: #ccc; line-height: 80px; }
+#sub_contents .btn > ul > li{ float: left; width: 25%; height: 100%; text-align: center; }
+#sub_contents .btn > ul > li > a{ display: block; color: #666; font-size: 20px; font-weight: 500; width: 100%; height: 100%; position: relative; }
+#sub_contents .btn > ul > li > a:after{ position: absolute; left: 226px; content: '|'; font-size: 40px; margin-left: 20px; color: rgb(184, 184, 184); font-weight: 100; }
+#sub_contents .btn > ul > li:last-child > a::after{ content: ''; }
+#sub_contents > .s_wrap > div{ display: none; }
+#sub_contents > .conwrap > .btn_wrap > div{ display: none; }
+#sub_contents .search{ margin: 20px auto 100px; }
+#sub_contents > .search input{ width: 650px; }
+#sub_contents > .search button{ width: 140px; margin-right: 0; }
+
+.conwrap{ width: 1000px; height: 90px; background-color: #ededed; margin: 0 auto; padding: 0 30px; box-sizing: border-box; text-align: center; }
+.conwrap li{ float: left; line-height: 90px; width: 20%; }
+.conwrap a{ display: block; color: #666; width: 100%; height: 100%; }
+.sub_conwrap{ width: 1000px; height: 1500px; margin: 0 auto; padding: 0 50px; box-sizing: border-box; overflow: hidden; }
+.sub_conwrap img{ width: 200px; box-shadow: 5px 5px 5px #ccc; }
+.sub_conwrap a{ float: left; margin: 0 150px 100px 0; }
+.sub_conwrap .last{ margin-right: 0; }
+.page_btn{ margin-top: 100px; }

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="noindex,nofollow">
+      <title>백서</title>
+
+      <link rel="shortcut icon" href="images/common/favicon.png">
+      <link rel="apple-touch-icon" href="images/common/favicon_ios.png">
+      <link rel="icon" href="images/common/favicon_android.png">
+
+      <link rel="stylesheet" href="css/swiper.css">
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/main.css">
+      
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/main.js"></script>
+   </head>
+   <body>
+      <div class="popup">
+         <div class="p_top">
+            <div class="notice">
+               <h2>NOTICE</h2>
+               <p>
+                  본 사이트는 상업적 목적이 아닌<br>
+                  <span>개인 포트폴리오</span> 용도로 만들어졌습니다.<br>
+                  홈페이지의 일부 내용과 이미지 등은<br>
+                  그 출처가 따로 있음을 밝힙니다.<br><br>
+                  
+                  본 사이트는 HTML5와 CSS3를 기준으로 하여<br>
+                  크롬, 사파리, 오페라, 파이어폭스,<br>
+                  IE9이상의 브라우저에 맞춘 홈페이지입니다.
+               </p>
+            </div>
+            <div class="mobile">
+               <h2>MOBILE</h2>
+               <p>
+                  우측의 QR코드를 스캔하시면<br>
+                  모바일 페이지로 이동합니다.
+               </p>
+            </div>
+            <img src="images/main/main/QRcode.png" alt="QR코드">
+         </div>
+         <div class="p_bottom">
+               <input type="checkbox" id="chkBox">
+               <label for="chkBox">
+               오늘 하루 보지 않기
+               </label>
+               <a href="#" title="팝업창 닫기 id="close">닫기</a>
+         </div>
+      </div>
+      <header>
+         <div class ="h_top">
+            <ul>
+               <li id="logo"><a href="index.html"><img src="images/common/logo.png" alt="백서 로고"></a></li>
+               <li><a href="tnav/login.html">로그인</a></li>
+               <li><a href="tnav/join.html">회원가입</a></li>
+            </ul>
+            <div id="search">
+               <a href="#">
+                  <img src="images/common/sns_icon/magnifier.png" alt="검색아이콘">
+               </a>
+               <form action="#">
+                  <label for="search_box" class="away">검색상자</label>
+                  <input type="text" name="search_box" id="search_box" placeholder="검색어를 입력하세요" class="search_box">
+                  <button type="submit"> <img src="images/common/sns_icon/magnifier.png" alt="검색아이콘"></button>
+               </form>
+            </div>
+         </div>
+         <nav class="gnb">
+            <ul class="gnb_float">
+               <li>
+                  <a href="book/whole_book.html" class="main_nav">도서</a>
+                  <ul class="sub_nav">
+                     <li><a href="book/whole_book.html">전체 도서</a></li>
+                     <li><a href="book/bestseller.html">베스트셀러</a></li>
+                     <li><a href="book/category.html">카테고리</a></li>
+                     <li><a href="book/subscription.html">정기구독</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="award/ksy_award.html" class="main_nav">문학상</a>
+                  <ul class="sub_nav">
+                     <li><a href="award/ksy_award.html">김수영 문학상</a></li>
+                     <li><a href="award/writer_award.html">오늘의 작가상</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="bookclub/bookclub.html" class="main_nav">북클럽</a>
+                  <ul class="sub_nav">
+                     <li><a href="bookclub/bookclub.html">백서북클럽</a></li>
+                     <li><a href="bookclub/mission_guide.html">스탬프&스티커</a></li>
+                     <li><a href="bookclub/back_shop.html">BACK SHOP</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="event/event.html" class="main_nav">이벤트</a>
+                  <ul class="sub_nav">
+                     <li><a href="event/event.html">이벤트</a></li>
+                     <li><a href="event/event_sketch.html">행사스케치</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="community/notice.html" class="main_nav">커뮤니티</a>
+                  <ul class="sub_nav">
+                     <li><a href="community/notice.html">공지 및 소식</a></li>
+                     <li><a href="community/serialization.html">연재</a></li>
+                     <li><a href="community/review.html">독자 리뷰</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="brandstory/brandstory.html" class="main_nav">소개</a>
+                  <ul class="sub_nav">
+                     <li><a href="brandstory/brandstory.html">백서소개</a></li>
+                     <li><a href="brandstory/recruit.html">채용정보</a></li>
+                     <li><a href="brandstory/map.html">오시는길</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+         <div class="subbg"></div>
+      </header>
+      <div class="main">
+         <div class="swiper-container main_slider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide slide01">
+                  <div class="wrap">
+                     <div class="text_box">
+                        <img src="images/main/main/main_img01_book.png" alt="설국 책 이미지">
+                           <h2>세계문학전집 61 <span>설국</span></h2>
+                           <p>
+                              “동양적 미의 정수를 보여준 노벨문학상 수상작.”<br>
+                              “눈 덮인 니가타 지방의 아름다운 정경.”<br>
+                              “순수한 서정의 세계를 감각적으로 묘사한 일본문학 최고의 경지.”<br>
+                              <span>- 스웨덴 한림원</span>
+                           </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide slide02">
+                  <div class="wrap">
+                     <img class="book" src="images/main/main/main_img02_book01.png" alt="세계 문학사 책 이미지">
+                     <img class="books" src="images/main/main/main_img02_book02.png" alt="보르헤스 문집 시리즈 이미지">
+                     <h2>보르헤스로부터 배우는 세계 문학사,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그리고 그가 바라본 불교의 기원과 교리</h2>
+                     <p>
+                        “인간은 언젠가는 속을 털어넣고 싶어 하는 법이지.<br>
+                        어차피 할 바에야 스쳐 지나가는 새,<br>
+                        마지막 담배 연기처럼<br>
+                        사라질 누군가와 하는 게 나은 법.”<br> 
+                                             <span>― 본문 682쪽</span>
+                     </p>
+                  </div>
+               </div>
+               <div class="swiper-slide slide03">
+                  <div class="wrap">
+                     <img src="images/main/main/main_img03_book.png" alt="텐 레슨 책 이미지">
+                     <img class="writer" src="images/main/main/main_img03_writer.png" alt="텐 레슨 저자 이미지">
+                     <div class="text_wrap">
+                        <h2>팬데믹 이후의 세상에 대비하라!</h2>
+                        <p>
+                           <span>"몇십 년이고 아무 일도 생기지 않다가,<br>
+                           때론 일주일 만에 몇십년치의 일이 벌어진다."-레닌<br><br></span>
+                           다음 세상을 살아갈 우리가 대비해야 하는 모든 것!
+                        </p>
+                     </div>
+                     <div class="line_box"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-button-next">
+               <img class="arrow" src="images/main/main/right_arrow.png" alt="이미지 슬라이더 다음 화살표">
+               <img class="circle" src="images/main/main/right_circle.png" alt="이미지 슬라이더 다음 화살표">
+            </div>
+            <div class="swiper-button-prev">
+               <img class="arrow" src="images/main/main/left_arrow.png" alt="이미지 슬라이더 이전 화살표">
+               <img class="circle" src="images/main/main/left_circle.png" alt="이미지 슬라이더 이전 화살표">
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+      <div class="new">
+         <h2>신작</h2>
+         <div class="new01">
+            <figure>
+               <a href="#"><img src="images/main/new/new01.png" alt="신작01 이미지"></a>
+               <figcaption class="figcaption01">
+                  <a href="#">
+                     <img class="triangle01" src="images/main/new/new_triangle01.png" alt="배경이미지 삼각형01">
+                     <img class="triangle02" src="images/main/new/new_triangle02.png" alt="배경이미지 삼각형02">
+                     <ul>
+                        <li class="title">열쇠 구멍으로 엿보는 소년</li>
+                        <li class="writer">스티븐 자일스</li>
+                        <li class="price">14,800원</li>
+                        <li class="summary">
+                           <span>“다 읽을 때까지, 책을 덮을 수가 없다.” ―린지 페이</span><br><br>
+   
+                           아홉 살 소년 새뮤얼은 영국 저택에 가정부 루스와 단 둘이 남는다.<br>
+                           엄마로부터는 발신자 주소 없는 엽서만 도착하고<br>
+                           루스의 장악력은 점점 커져만 가는 가운데,<br>
+                           열쇠 구멍으로 들여다본 광경은 점점 새뮤얼을 미궁 속으로 몰아넣는다.<br>
+                           이제 소년은 혼자의 힘으로 진실을 찾아야만 한다.<br><br>
+                           
+                           “네가 할 수 있는 일치고 내가 모를 일이라곤 없단다, 새뮤얼.<br>
+                           이 집은 네가 몰래 하는 짓들을 숨겨 주지 않아, 집이 다 귀띔해 주지.<br>
+                           귀 기울여 들을 만한 감각이 있는 사람이라면<br>
+                           누구한테든 이 집이 사연을 들려주거든.”
+                        </li>
+                     </ul>
+                  </a>
+               </figcaption>
+            </figure>
+         </div>
+         <div class="new02">
+            <figure>
+               <a href="#"><img src="images/main/new/new02.png" alt="신작02 이미지"></a>
+               <figcaption class="figcaption02">
+                  <a href="#">
+                     <img class="triangle01" src="images/main/new/new_triangle01.png" alt="배경이미지 삼각형01">
+                     <img class="triangle02" src="images/main/new/new_triangle02.png" alt="배경이미지 삼각형02">
+                     <ul>
+                        <li class="title">오늘의 섬을 시작합니다</li>
+                        <li class="writer">강지혜</li>
+                        <li class="price">14,000원</li>
+                        <li class="summary">
+                           영원을 담은 매일의 쓰기, 문학론 에세이 시리즈 ‘매일과 영원’<br><br>
+
+                           매일 묵묵히 쓰는 어떤 것, 그것은 시이고 소설이고 일기입니다.<br>
+                           우리의 하루하루는 무심히 지나가지만<br>
+                           그 속에서 집요하게 문학을 발견해 내는 작가들에 의해<br>
+                           그것들은 시간을 이기고 영원에 가깝게 살 것입니다.<br>
+                           ‘매일과 영원’에 담기는 글들은 하루를 붙잡아 두는 일기이며,<br>
+                           작가가 쓰는 그들 자신의 문학론입니다.<br>
+                           내밀하고 친밀한 방식으로 쓰인 이 에세이가,<br>
+                           일기장을 닮은 책이, 독자의 일상에 스미기를 바랍니다.<br>
+                           강지혜 시인의 모든 처음들을 담은 책,<br>
+                           『오늘의 섬을 시작합니다』가 시리즈의 시작을 알립니다.
+                        </li>
+                     </ul>
+                  </a>
+               </figcaption>
+            </figure>
+         </div>
+         <div class="new03">
+            <figure>
+               <img src="images/main/new/new03.png" alt="신작03 이미지">
+               <figcaption class="figcaption03">
+                  <a href="#">
+                     <img class="triangle01" src="images/main/new/new_triangle01.png" alt="배경이미지 삼각형01">
+                     <img class="triangle02" src="images/main/new/new_triangle02.png" alt="배경이미지 삼각형02">
+                     <ul>
+                        <li class="title">완경 일기</li>
+                        <li class="writer">다시 스타인키</li>
+                        <li class="price">16,800원</li>
+                        <li class="summary">
+                           “완경 자체는 문제가 아니다.<br>
+                           완경이라는 현상을 가부장제 아래서 경험한다는 점이 문제다.”<br><br>
+
+                           완경 이후 여성의 삶을 총체적으로 탐구하고,<br>
+                           혁명적 시각을 제안하는 대담한 선언서<br><br>
+
+                           어쩌면 회고록, 혹은 선언문, 매우 섬세한 생태학적 기록.<br>
+                           『완경 일기』는 이제껏 밝혀진 바 없는 낯선 영토를 질주하는 대담한 모험이다.<br>
+                           -제니 오필(『사색의 부서』의 저자)<br><br>
+
+                           모든 여성들이 직면해 있고, 언젠가 마주해야만 하는 완경이라는 주제가<br>
+                           이토록 신선하고 초월적인 문제인지 몰랐다. -《뉴욕 타임스》
+                        </li>
+                     </ul>                    
+                  </a>
+               </figcaption>
+            </figure>
+         </div>
+         <div class="new02_hover"><a href="#"><img src="images/main/new/new02.png" alt="신작02 이미지"></a></div>
+         <div class="new03_hover"><a href="#"><img src="images/main/new/new03.png" alt="신작03 이미지"></a></div>
+         <div class="line"></div>
+      </div>
+      <div class="best">
+         <h2>베스트</h2>
+         <div class="best01">
+            <figure>
+               <img src="images/main/best/best01.png" alt="베스트01 이미지">
+                  <figcaption class="figcaption01">
+                     <a href="#">
+                        <img class="triangle01" src="images/main/best/new_triangle01.png" alt="배경이미지 삼각형01">
+                        <img class="triangle02" src="images/main/best/new_triangle02.png" alt="배경이미지 삼각형02">
+                        <ul>
+                           <li class="title">데미안</li>
+                           <li class="writer">헤르만 헤세</li>
+                           <li class="price">8,000원</li>
+                           <li class="summary">
+                              <span>“새는 알에서 나오려고 투쟁한다. 알은 세계이다.<br>
+                              태어나려는 자는 하나의 세계를 깨뜨려야 한다.”</span><br><br>
+
+                              따스한 가정에서 착하게 살아가던 싱클레어 앞에<br>
+                              어느 날 신비한 소년 데미안이 나타나 선악의 진실을 하나씩 가르치기 시작한다.<br>
+                              내면의 선악 사이에서 고뇌하던 싱클레어는 유혹을 이기지 못하고 거리로 나가<br>
+                              쾌락을 추구하기도 하지만 베아트리체를 만나면서 어두운 내면을 이겨 낸다.<br>
+                              하지만 싱클레어가 그린 베아트리체의 초상화는 어딘지 데미안과 닮았다.<br><br>
+
+                              『데미안』은 주인공 싱클레어와 데미안의 우정을 바탕으로,<br>
+                              성장 과정에서 겪는 시련과 그 시련의 극복,<br>
+                              깨달음을 통해 완전한 자아에 이르는 과정을 성찰한다.
+                           </li>
+                        </ul>
+                     </a>
+                  </figcaption>
+            </figure>
+         </div>
+         <div class="best02">
+            <figure>
+               <img src="images/main/best/best02.png" alt="베스트02 이미지">
+                  <figcaption class="figcaption02">
+                     <a href="#">
+                        <img class="triangle01" src="images/main/best/new_triangle01.png" alt="배경이미지 삼각형01">
+                        <img class="triangle02" src="images/main/best/new_triangle02.png" alt="배경이미지 삼각형02">
+                        <ul>
+                           <li class="title">동물농장</li>
+                           <li class="writer">조지 오웰</li>
+                           <li class="price">7,000원</li>
+                           <li class="summary">
+                              <span>정치권력을 부패시키는 근본적 모순에 대한 빼어난 우화<br>
+                              문학의 비판적 역할에 대한 고민이 담긴 위대한 풍자소설</span><br><br>
+                              
+                              조지 오웰은 『동물농장』에서 인간의 속박에서 벗어나 혁명을 이루고<br>
+                              이상 사회를 건설한 동물 공동체가 변질되는 모습을 통해,<br>
+                              구소련의 역사를 재현하며 스탈린 독재 체제를 강도 높게 비판한다.<br>
+                              하지만 이 우화는 특정한 시대에만 한정되어 읽히지 않는다.<br><br>
+                              
+                              이 작품은 인류가 사회를 이루고 살 때부터 벌어진 ‘독재’를<br>
+                              함축적이고 상징적으로 그려내어 지금까지도 유효한 풍자를 담고 있으며,<br>
+                              그렇기에 조지 오웰이 지닌 사회비판적 문학의 역량이 여실히 드러난다.
+                           </li>
+                        </ul>
+                     </a>
+                  </figcaption>
+            </figure>
+         </div>
+         <div class="best03">
+            <figure>
+               <img src="images/main/best/best03.png" alt="베스트03 이미지">
+                  <figcaption class="figcaption03">
+                     <a href="#">
+                        <img class="triangle01" src="images/main/best/new_triangle01.png" alt="배경이미지 삼각형01">
+                        <img class="triangle02" src="images/main/best/new_triangle02.png" alt="배경이미지 삼각형02">
+                        <ul>
+                           <li class="title">호밀밭의 파수꾼</li>
+                           <li class="writer">J. D. 샐린저</li>
+                           <li class="price">7,000원</li>
+                           <li class="summary">
+                              <span>“같이 있는 사람 없어. 나하고 나 자신, 그리고 또 나뿐이지.”</span><br><br>
+
+                              20세기 미국 문단의 이단아 J. D. 샐린저의 『호밀밭의 파수꾼』은<br>
+                              홀든 콜필드가 퇴학을 당하고 돌아오기까지 며칠간의 일들을 담은 작품이다.<br>
+                              십대들의 언어를 그대로 옮긴 듯한 욕설과 비속어 속에 위트를 간직한 문장으로<br>
+                              청춘만이 공감할 수 있는 페이소스를 녹여 낸 이 소설은<br>
+                              젊은 독자들 사이에서 ‘콜필드 신드롬’을 일으켰고,<br>
+                              홀든 콜필드라는 이름은 반항아의 대명사가 되었다.<br><br>
+                              
+                              전통적인 성장 서사가 자아의 발견과 성찰에 집중하고 있다면,<br>
+                              『호밀밭의 파수꾼』은 인간 존재를 특징짓는 공허함과 소외,<br>
+                              그리고 위선적인 기성세대에 대한 예민한 성찰을 보여 준다.
+                           </li>
+                        </ul>
+                     </a>
+                  </figcaption>         
+            </figure>
+         </div>
+         <div class="best02_hover"><img src="images/main/best/best02.png" alt="베스트02 이미지"></div>
+         <div class="best03_hover"><img src="images/main/best/best03.png" alt="베스트03 이미지"></div>
+         <div class="line"></div>
+      </div>
+      <div class="award">
+         <div class="section01">
+            <img src="images/main/awards/ksy_img.png" alt="김수영 시인 이미지">
+            <p class="ksy">
+               김수영(金洙暎)<br>
+               1921년 11월 27일 ~ 1968년 6월 16일
+            </p>
+         </div>
+         <div class="wrap">
+            <div class="t_wrap">
+               <p>김수영 문학상은<br>
+                  시대의 거부로 이어진 자유와 치열한 양심의 시인,<br>
+                  김수영을 기리기 위하여 1981년 제정된 문학상입니다.<br><br>
+                  
+                  넘치는 패기와 신선한 개성으로<br>
+                  시단의 미래를 새롭게 이끌어갈<br>
+                  많은 시인들의 관심과 응모를 바랍니다.
+               </p>
+            </div>
+            <div class="award_book">
+               <ul>
+                  <li><a href="award/ksy_award.html"><img src="images/main/awards/award_book01.png" alt="2020년 김수영 문학상 수상작 이미지"><br><span>2020년</span><br>「그 웃음을 좋아해」<br>이기리</a></li>
+                  <li><a href="award/ksy_award.html"><img src="images/main/awards/award_book02.png" alt="2019년 김수영 문학상 수상작 이미지"><br><span>2019년</span><br>「마구마구 피뢰침」<br>권박</a></li>
+                  <li><a href="award/ksy_award.html"><img src="images/main/awards/award_book03.png" alt="2018년 김수영 문학상 수상작 이미지"><br><span>2018년</span><br>「캣콜링」<br>이소호</a></li>
+               </ul>
+               <button type="submit" onclick = "location.href = 'award/ksy_award.html'">자세히보기</button>
+            </div>
+         </div>
+      </div>
+      <div class="subscription">
+         <div class="littor">
+            <a href="book/littor.html">
+               <img src="images/main/subscription/littor_bn.png" alt="릿터 이미지배너">
+               <img class="more_btn" src="images/main/subscription/more_btn.png" alt="더보기 버튼">
+               <img class="more_btn_hover" src="images/main/subscription/more_btn_hover.png" alt="더보기 버튼">
+            </a>
+         </div>
+         <div class="hanpyeon">
+            <a href="book/hanpyeon.html">
+               <img src="images/main/subscription/hanpyeon_bn.png" alt="한편 이미지배너">
+               <img class="more_btn" src="images/main/subscription/more_btn.png" alt="더보기 버튼">
+               <img class="more_btn_hover" src="images/main/subscription/more_btn_hover.png" alt="더보기 버튼">
+            </a>
+         </div>
+         <div class="eback">
+            <a href="book/eback.html">
+               <img src="images/main/subscription/eback_bn.png" alt="이백 이미지배너">
+               <img class="more_btn" src="images/main/subscription/more_btn.png" alt="더보기 버튼">
+               <img class="more_btn_hover" src="images/main/subscription/more_btn_hover.png" alt="더보기 버튼">
+            </a>
+         </div>
+      </div>
+      <div class="bookclub">
+         <div class="wrap">
+            <h2>2021</h2>
+            <h3>백서 북클럽</h3>
+            <h4>혜 택</h4>
+            <div class="benefit">
+               <ul>
+                  <li>세계문학전집 또는 세계시인선 3권(선택)</li>
+                  <li>북클럽에디션 2권(선택)</li>
+                  <li>북스탠드 케이스</li>
+                  <li>세계문학전집 파우치</li>
+                  <li>백서북클럽 엽서책</li>
+               </ul>
+               <p>+ 스티커와 스탬프를 모아 추가혜택을 받으세요!</p>
+            </div>
+            <button type="submit" onclick="location.href='bookclub/bookclub.html'">자세히 알아보기</button>
+         </div>
+      </div>
+      <div class="sns_board">
+         <ul>
+            <li class="sns01"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns01.png" alt="sns01 이미지"></a></li>
+            <li class="sns02"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns02.png" alt="sns02 이미지"></a></li>
+            <li class="sns03"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns03.png" alt="sns03 이미지"></a></li>
+            <li class="sns04"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns04.png" alt="sns04 이미지"></a></li>
+            <li class="sns05"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns05.png" alt="sns05 이미지"></a></li>
+            <li class="sns06"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns06.png" alt="sns06 이미지"></a></li>
+            <li class="sns07"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns07.png" alt="sns07 이미지"></a></li>
+            <li class="sns08"><a href="https://www.instagram.com/p/CQlUKqdHS4-/"><img src="images/main/sns_board/sns08.png" alt="sns08 이미지"></a></li>
+         </ul>
+         <button type="submit" onclick="window.open('https://www.instagram.com/minumsa_books/?hl=ko');">백서 인스타그램 계정으로 이동</button>
+      </div>
+      <div class="brandstory">
+         <div class="wrap">
+               <h2>白書, 百書 ;</h2>
+               <p>
+                  아무 것도 적히지 않은 깨끗한 책,<br>
+                  혹은 일백 가지의 책이라는 의미를 담은 ‘백서’는<br>
+                  우리가 걸어가는 삶을 고요히 조망할 수 있는 책들을 엄선합니다.<br><br>
+                  모든 것의 바탕이 되는 정결한 백지 위에 적힐<br>
+                  독자 여러분의 이야기를 기대합니다.
+               </p>
+         </div>
+      </div>
+      <footer>
+         <div class="wrap">
+            <div class="f_top">
+               <ul>
+                  <li class="membership_agreement"><a href="#">회원약관</a></li>
+                  <li class="personal_data"><a href="#">개인정보처리방침</a></li>
+                  <li class="copyright"><a href="#">2차저작권 가이드</a></li>
+                  <li class="contact"><a href="#">위치 및 연락처</a></li>
+                  <li class="last"><a href="sitemap.html">사이트맵</a></li>
+               </ul>
+            </div>
+            <div class="f_bottom">
+               <img src="images/common/footer_logo.png" alt="하단 로고">
+               <p>(주)백서 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호<br>
+                  주소: 서울시 강남구 신사동 506 강남출판문화센터 5층 | 새주소: 서울시 강남구 도산대로 1길 62 5층<br>
+                  전화: 02-515-2000 | webmaster@minumsa.com | Copyright © Minumsa Publishing Group 
+               </p>
+               <div class="wrap">
+                  <div class="f_site">
+                     <button>패밀리 사이트<span class="up_icon">▲</span></button>
+                     <ul class="f_site_list">
+                        <li><a href="http://minumsa.com/" target="_blank">민음사 출판그룹</a></li>
+                        <li><a href="index.html" target="_blank">백서</a></li>
+                        <li><a href="http://goldenbough.minumsa.com/" target="_blank">황금가지</a></li>
+                        <li><a href="http://sciencebooks.minumsa.com/" target="_blank">사이언스북스</a></li>
+                        <li><a href="http://semicolon.minumsa.com/" target="_blank">세미콜론</a></li>
+                        <li><a href="http://minumin.minumsa.com/" target="_blank">민음인</a></li>
+                        <li><a href="http://panmidong.minumsa.com/" target="_blank">판미동</a></li>
+                        <li><a href="http://banbi.minumsa.com/" target="_blank">반비</a></li>
+                        <li><a href="http://pulp.minumsa.com/" target="_blank">펄프</a></li>
+                        <li><a href="http://bir.co.kr/" target="_blank">비룡소</a></li>
+                     </ul>
+                  </div>
+                  <div class="sns_icon">
+                     <ul>
+                        <li>
+                           <a href="https://ko-kr.facebook.com/MinumsaBooks/" target="_blank">
+                              <img src="images/common/sns_icon/sns_facebook.png" alt="페이스북 아이콘">
+                              <img class="hover_icon" src="images/common/sns_icon/sns_facebook_out.png" alt="페이스북 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://instagram.com/minumsa_books?igshid=ißgz5469lomig" target="_blank">
+                              <img src="images/common/sns_icon/sns_instagram.png" alt="인스타그램 아이콘">
+                              <img class="hover_icon" src="images/common/sns_icon/sns_instagram_out.png" alt="인스타그램 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://twitter.com/minumsa_books?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                              <img src="images/common/sns_icon/sns_twitter.png" alt="트위터 아이콘">
+                              <img class="hover_icon" src="images/common/sns_icon/sns_twitter_out.png" alt="트위터 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.youtube.com/minumsatv" target="_blank">
+                              <img src="images/common/sns_icon/sns_youtube.png" alt="유튜브 아이콘">
+                              <img class="hover_icon" src="images/common/sns_icon/sns_youtube_out.png" alt="유튜브 아이콘">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <aside class="top_btn">
+         <a href="#">
+            <img src="images/common/sns_icon/scroll_top_btn.png" alt="스크롤탑버튼 아이콘">
+            <p>TOP</p>
+         </a>
+      </aside>
+   </body>
+</html>

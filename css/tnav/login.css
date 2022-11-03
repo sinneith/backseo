@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.login{ background-image: url(../../images/tnav/login_bg.jpg); }
+
+#sub_menu{ background-color: #999; }
+#sub_contents fieldset{ border: none; }
+#sub_contents h3{ font-size: 50px; text-align: center; margin: 100px 0 30px 0; }
+#sub_contents{ border: none; }
+#sub_contents form{ text-align: center; }
+#sub_contents .away{ position: absolute; left: -999em; }
+#sub_contents input[type=text], #sub_contents input[type=password]{ border: 2px solid #ccc; color: #ccc; display: block; margin: 10px auto; padding: 0 20px; box-sizing: border-box; width: 400px; height: 60px; font-size: 20px; }
+.chkId{ width: 400px; margin: 10px auto; padding: 0 0 10px 15px; box-sizing: border-box; text-align: left; }
+#sub_contents button{ width: 400px; height: 60px; border: none; background-color: #b1a7d0; color: #fff; font-size: 20px; }
+#sub_contents .find{ width: 400px; margin: 5px auto 200px; }
+#sub_contents .find ul{ width: 400px; height: 60px; text-align: center; line-height: 58px; } 
+#sub_contents .find li{ width: 49%; height: 100%; float: left; border: 1px solid #b1a7d0; }
+#sub_contents .find li:last-child{ float: right; }
+#sub_contents .find li a{ color: #b1a7d0; font-size: 18px; }

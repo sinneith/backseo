@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="noindex,nofollow">
+      <title>백서</title>
+
+      <link rel="shortcut icon" href="../images/common/favicon.png">
+      <link rel="apple-touch-icon" href="../images/common/favicon_ios.png">
+      <link rel="icon" href="../images/common/favicon_android.png">
+
+      <link rel="stylesheet" href="../css/swiper.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/sub.css">
+      <link rel="stylesheet" href="../css/tnav/join.css">
+      
+      <script src="../js/jquery-1.12.4.min.js"></script>
+      <script src="../js/jquery.easing.1.3.js"></script>
+      <script src="../js/swiper.min.js"></script>
+      <script src="../js/common.js"></script>
+      <script src="../js/main.js"></script>
+      <script src="../js/join.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class ="h_top">
+            <ul>
+               <li id="logo"><a href="../index.html"><img src="../images/common/logo.png" alt="백서 로고"></a></li>
+               <li><a href="login.html">로그인</a></li>
+               <li><a href="join.html">회원가입</a></li>
+            </ul>
+            <div id="search">
+               <a href="#">
+                  <img src="../images/common/sns_icon/magnifier.png" alt="검색아이콘">
+               </a>
+               <form action="#">
+                  <label for="search_box" class="away">검색상자</label>
+                  <input type="text" name="search_box" id="search_box" placeholder="검색어를 입력하세요" class="search_box">
+                  <button type="submit"> <img src="../images/common/sns_icon/magnifier.png" alt="검색아이콘"></button>
+               </form>
+            </div>
+         </div>
+         <nav class="gnb">
+            <ul class="gnb_float">
+               <li>
+                  <a href="../book/whole_book.html" class="main_nav">도서</a>
+                  <ul class="sub_nav">
+                     <li><a href="../book/whole_book.html">전체 도서</a></li>
+                     <li><a href="../book/bestseller.html">베스트셀러</a></li>
+                     <li><a href="../book/category.html">카테고리</a></li>
+                     <li><a href="../book/subscription.html">정기구독</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="../award/ksy_award.html" class="main_nav">문학상</a>
+                  <ul class="sub_nav">
+                     <li><a href="../award/ksy_award.html">김수영 문학상</a></li>
+                     <li><a href="../award/writer_award.html">오늘의 작가상</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="../bookclub/bookclub.html" class="main_nav">북클럽</a>
+                  <ul class="sub_nav">
+                     <li><a href="../bookclub/bookclub.html">백서북클럽</a></li>
+                     <li><a href="../bookclub/mission_guide.html">스탬프&스티커</a></li>
+                     <li><a href="../bookclub/back_shop.html">BACK SHOP</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="../event/event.html" class="main_nav">이벤트</a>
+                  <ul class="sub_nav">
+                     <li><a href="../event/event.html">이벤트</a></li>
+                     <li><a href="../event/event_sketch.html">행사스케치</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="../community/notice.html" class="main_nav">커뮤니티</a>
+                  <ul class="sub_nav">
+                     <li><a href="../community/notice.html">공지 및 소식</a></li>
+                     <li><a href="../community/serialization.html">연재</a></li>
+                     <li><a href="../community/review.html">독자 리뷰</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="../brandstory/brandstory.html" class="main_nav">소개</a>
+                  <ul class="sub_nav">
+                     <li><a href="../brandstory/brandstory.html">백서소개</a></li>
+                     <li><a href="../brandstory/recruit.html">채용정보</a></li>
+                     <li><a href="../brandstory/map.html">오시는길</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+         <div class="subbg"></div>
+      </header>
+      <div id="main_img" class="join">
+         <h2>회원가입</h2>
+         <p>백서의 회원만이 누릴 수 있는 다양한 혜택을 받으세요.</p>
+      </div>
+      <div id="sub_menu"></div>
+     <div id="sub_contents">
+         <div class="joinBox">
+            <h3>JOIN</h3>
+             <form action="#">
+                 <table>
+                    <caption class="away">회원가입</caption>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="joinId">아이디</label>
+                         </th>
+                         <td>
+                             <input type="text" id="joinId" class="box01">
+                             <button type="button">중복확인</button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="joinPw">비밀번호</label>
+                         </th>
+                         <td>
+                             <input type="password" id="joinPw" class="box01" maxlength="20">
+                             ※ 공백없이 영문(소), 숫자 6~20자 입력
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="joinPwChk">비밀번호 확인</label>
+                         </th>
+                         <td>
+                             <input type="password" id="joinPwChk" class="box01" maxlength="20">
+                         </td>
+                     </tr>
+                     <tr>
+                         <th class="none">생년월일</th>
+                         <td>
+                             <!-- 옵션태그 제이쿼리에서 처리 -->
+                             <select id="birthYear" class="box02"></select>
+                             <label for="birthYear">년</label>
+                             <select id="birthMonth" class="box02"></select>
+                             <label for="birthMonth">월</label>
+                             <select id="birthDate" class="box02"></select>
+                             <label for="birthDate">일</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="postCode">주소</label>
+                         </th>
+                         <td class="address">
+                             <input type="text" id="postCode" class="box01">
+                             <button type="button" onclick="sample2_execDaumPostcode()">우편번호찾기</button>
+                             <br>
+                             <input type="text" id="addr01" class="box01">
+                             <label for="addr01" class="away">주소입력상자</label>
+                             <input type="text" id="addr02" class="box01" placeholder="나머지주소를 입력하세요">
+                             <label for="addr02" class="away">상세주소입력상자</label>
+
+                             <div id="layer">
+                                 <img src="http://t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                             </div>
+
+                             <script src="http://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                             <script src="../js/tnav/post.js"></script>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="phone01">휴대폰</label>
+                         </th>
+                         <td>
+                             <select id="phone01" class="box02">
+                                 <option value="010">010</option>
+                                 <option value="011">011</option>
+                                 <option value="016">016</option>
+                                 <option value="017">017</option>
+                                 <option value="018">018</option>
+                                 <option value="019">019</option>
+                             </select>
+                             -
+                             <input type="text" id="phone02" maxlength="4" class="box02">
+                             <label for="phone02" class="away">휴대폰두번째자리입력상자</label>
+                             -
+                             <input type="text" id="phone03" maxlength="4" class="box02">
+                             <label for="phone03" class="away">휴대폰세번째자리입력상자</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             SMS 수신여부
+                         </th>
+                         <td class="radio">
+                             <input type="radio" name="sms" id="smsYes" checked>
+                             <label for="smsYes">수신</label>
+                             <input type="radio" name="sms" id="smsNo">
+                             <label for="smsNo">수신하지않음</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th>
+                             <span class="star">*</span>
+                             <label for="emailId">이메일</label>
+                         </th>
+                         <td>
+                             <input type="text" id="emailId" class="box03">
+                             @
+                             <input type="text" id="emailDirect" class="box03" placeholder="직접입력">
+                             <label for="emailDirect" class="away">이메일주소직접입력상자</label>
+                             <select id="emailSelect" class="box03">
+                                 <option value="#">이메일선택</option>
+                                 <option value="naver.com">네이버</option>
+                                 <option value="hanmail.net">한메일</option>
+                                 <option value="google.com">구글</option>
+                             </select>
+                             <label for="emailSelect" class="away">이메일주소선택상자</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <th class="last">
+                             <span class="star">*</span>
+                             이메일 수신여부
+                         </th>
+                         <td class="radio last">
+                             <input type="radio" name="email" id="emailYes" checked>
+                             <label for="emailYes">수신</label>
+                             <input type="radio" name="email" id="emailNo">
+                             <label for="emailNo">수신하지않음</label>
+                         </td>
+                     </tr>
+                 </table>
+                 <h5><span class="star">*</span>는 필수정보 입니다.</h5>
+                 <button type="submit">회원가입</button>
+             </form>
+         </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+      
+      <footer>
+         <div class="wrap">
+            <div class="f_top">
+               <ul>
+                  <li class="membership_agreement"><a href="#">회원약관</a></li>
+                  <li class="personal_data"><a href="#">개인정보처리방침</a></li>
+                  <li class="copyright"><a href="#">2차저작권 가이드</a></li>
+                  <li class="contact"><a href="#">위치 및 연락처</a></li>
+                  <li class="last"><a href="../sitemap.html">사이트맵</a></li>
+               </ul>
+            </div>
+            <div class="f_bottom">
+               <img src="../images/common/footer_logo.png" alt="하단 로고">
+               <p>(주)백서 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호<br>
+                  주소: 서울시 강남구 신사동 506 강남출판문화센터 5층 | 새주소: 서울시 강남구 도산대로 1길 62 5층<br>
+                  전화: 02-515-2000 | webmaster@minumsa.com | Copyright © Minumsa Publishing Group 
+               </p>
+               <div class="wrap">
+                  <div class="f_site">
+                     <button>패밀리 사이트<span class="up_icon">▲</span></button>
+                     <ul class="f_site_list">
+                        <li><a href="http://minumsa.com/" target="_blank">민음사 출판그룹</a></li>
+                        <li><a href="index.html" target="_blank">백서</a></li>
+                        <li><a href="http://goldenbough.minumsa.com/" target="_blank">황금가지</a></li>
+                        <li><a href="http://sciencebooks.minumsa.com/" target="_blank">사이언스북스</a></li>
+                        <li><a href="http://semicolon.minumsa.com/" target="_blank">세미콜론</a></li>
+                        <li><a href="http://minumin.minumsa.com/" target="_blank">민음인</a></li>
+                        <li><a href="http://panmidong.minumsa.com/" target="_blank">판미동</a></li>
+                        <li><a href="http://banbi.minumsa.com/" target="_blank">반비</a></li>
+                        <li><a href="http://pulp.minumsa.com/" target="_blank">펄프</a></li>
+                        <li><a href="http://bir.co.kr/" target="_blank">비룡소</a></li>
+                     </ul>
+                  </div>
+                  <div class="sns_icon">
+                     <ul>
+                        <li>
+                           <a href="https://ko-kr.facebook.com/MinumsaBooks/" target="_blank">
+                              <img src="../images/common/sns_icon/sns_facebook.png" alt="페이스북 아이콘">
+                              <img class="hover_icon" src="../images/common/sns_icon/sns_facebook_out.png" alt="페이스북 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://instagram.com/minumsa_books?igshid=ißgz5469lomig" target="_blank">
+                              <img src="../images/common/sns_icon/sns_instagram.png" alt="인스타그램 아이콘">
+                              <img class="hover_icon" src="../images/common/sns_icon/sns_instagram_out.png" alt="인스타그램 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://twitter.com/minumsa_books?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                              <img src="../images/common/sns_icon/sns_twitter.png" alt="트위터 아이콘">
+                              <img class="hover_icon" src="../images/common/sns_icon/sns_twitter_out.png" alt="트위터 아이콘">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.youtube.com/minumsatv" target="_blank">
+                              <img src="../images/common/sns_icon/sns_youtube.png" alt="유튜브 아이콘">
+                              <img class="hover_icon" src="../images/common/sns_icon/sns_youtube_out.png" alt="유튜브 아이콘">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <aside class="top_btn">
+         <a href="#">
+            <img src="../images/common/sns_icon/scroll_top_btn.png" alt="스크롤탑버튼 아이콘">
+            <p>TOP</p>
+         </a>
+      </aside>
+   </body>
+</html>

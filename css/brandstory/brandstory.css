@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+#sub_contents{ width: 1200px; }
+#sub_contents{
+    background-image: url(../../images/sub/brandstory/brandstory/bg.png), url(../../images/sub/brandstory/brandstory/booklist01.png),
+    url(../../images/sub/brandstory/brandstory/booklist02.png), url(../../images/sub/brandstory/brandstory/booklist03.png) ;
+    background-size: 800px, 700px, 700px, 700px;
+    background-repeat: no-repeat; opacity: 0.6, 0.5, 0.5, 0.3; 
+    background-position: top center, right 900px, right 1920px, right 3100px;
+}
+#sub_contents > p{ font-family: 'Eulyoo1945-Regular'; font-size: 26px; text-align: center; padding-top: 150px; box-sizing: border-box; line-height: 50px; color: #666; }
+#sub_contents > p:last-child{ position: relative; top: -100px; }
+#sub_contents > p span{ font-family: 'Eulyoo1945-Regular'; font-size: 40px; line-height: 100px; }
+#sub_contents > .line{ width: 1000px; margin: 0 auto; text-align: center; }
+#sub_contents > .line > .line01, #sub_contents > .line > .line02{ width: 1px; height: 200px; background-color: #666; margin: 200px auto 0; }
+#sub_contents ul{ margin-top: 300px; padding: 0 80px; box-sizing: border-box;  }
+#sub_contents ul > li{ margin-bottom: 300px; }
+#sub_contents ul > li > h3{ font-family: 'Eulyoo1945-SemiBold'; font-size: 40px; margin-bottom: 50px; }
+#sub_contents ul > li > p{ font-family: 'Eulyoo1945-Regular'; font-size: 24px; line-height: 50px; }
+#sub_contents .right{ text-align: right; }
+#sub_contents > img{ opacity: 0.3; display: block; margin: 150px auto 200px;}

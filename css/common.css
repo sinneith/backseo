@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+*{ font-family: 'Noto Sans KR', '맑은 고딕', sans-serif; padding: 0; margin: 0; box-sizing: border-box;}
+li{ list-style: none; }
+a{text-decoration: none; }
+button{ cursor: pointer; }
+
+
+
+/* LAYOUT */
+header{ width: 100%; min-width: 1320px; height: 180px; margin: 0 auto; }
+footer{ width: 100%; min-width: 1320px; height: 235px; margin: 0 auto; background-color: #717171; }
+.h_top{ width: 1320px; height: 105px; margin: 0 auto; position: relative; }
+.gnb{ width: 100%; min-width: 1320px; height: 75px; } 
+.f_top{ width: 100%; height: 110px; padding: 50px 70px 40px 70px; box-sizing: border-box; }
+.f_bottom{ width: 100%; height: 125px; background-color: #717171; }
+.wrap{ width: 1320px; height: 100%; margin: 0 auto; }
+
+
+/* h_top */
+#logo{ position: relative; left: -260px; }
+.h_top ul{ float: right; height: 105px; line-height: 105px; }
+.h_top li{ float: left; margin-left: 50px; }
+.h_top li:last-child{ margin-right: 120px; }
+.h_top li a{ font-size: 20px; font-weight: 500; color: #666; }
+
+/* search box */
+#search{ position: absolute; top: 40px; right: 25px; z-index: 10; width: 26px; height: 26px; }
+#search a{ display: block; width: 26px; height: 26px; }
+#search button{ position: absolute; top: 10px; right: 20px; z-index: 21; border: none; background-color: #fff;}
+#search_box{ 
+   width: 322px; height: 50px; border: 2px solid #6e6e6e; background-color: #fff; 
+   padding: 13px 20px; box-sizing: border-box; 
+   z-index: 20;
+}
+#search_box::placeholder{ display: none; position: relative; top: 3px; font-size: 18px; color: #7b7b7b; font-weight: 500; }
+#search form{ position: absolute; top: -10px; right: 0; width: 322px; height: 50px; transform: scaleX(0); transform-origin: right center; }
+#search.active form{ transform: scaleX(1); transition: 0.3s; }
+.away{ position: absolute; left: -999em; }
+ 
+
+
+/* h_bottom */
+.gnb{ width: 1320px; height: 75px; margin: 0 auto; padding: 0 40px; }
+.gnb > .gnb_float > li{ position: relative; float: left; width: 16.66%; height: 75px; line-height: 60px; text-align: center;  }
+.gnb > .gnb_float > li a{ color: #666; }
+.gnb_float .main_nav{ display: block; font-size: 26px; font-weight: 500; }
+.gnb_float > li:hover .main_nav{ color: #7966af; }
+.gnb .sub_nav{ display: none; z-index: 12; position: absolute; width: 100%; text-align: center; }
+.gnb .sub_nav a{ font-size: 22px; color: #999; }
+.gnb .sub_nav a:hover{ color: #a399bf; }
+.subbg{ display: none; position: absolute; z-index: 10; width: 100%; height: 450px; background-color: #fff;}
+
+
+
+/* footer */
+.f_top li{ display: inline-block; margin-right: 151px;}
+.f_top li a{ font-size: 20px; color: #fff; }
+.f_top li:last-child{ margin-right: 0;}
+.f_bottom img, .f_bottom p { float: left; }
+.f_bottom p{ margin-left: 60px; color: #fff; font-size: 16px; line-height: 30px;}
+
+
+
+/* family_site */
+.f_bottom .wrap{ position: relative; }
+.f_site{ position: relative; }
+.f_site ul{ display: none; position: absolute; top: -321px; right: 4px; width: 218px; height: 325px; background-color: #fff; overflow: hidden; border: 1px solid #717171; padding: 20px 20px; box-sizing: border-box; font-size: 16px; line-height: 30px; color: #717171; font-weight: 500; }
+.f_site li a{ color: #717171; }
+.f_site button{ float: left; width: 216px; height: 35px; position: absolute; top: 0px; right: 5px; font-size: 16px; font-weight: 700; text-align: left; line-height: 35px; color: #717171; border: none; background-color: #fff; padding: 0 20px; box-sizing: border-box; box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2); }
+.f_site button .up_icon{ position: relative; top: 5px; right: -10px; float: right; width: 46px; height: 100%; font-size: 22px; line-height: 22px; text-align: center; color: #717171; transition: 0.2s; }
+.f_site button.active + ul{ display: block; }
+.f_site button.active .up_icon{ transform: rotate(180deg); position: relative; top: -5px; transition: 0.2s; }
+
+
+
+/* sns icon */
+.f_bottom .sns_icon{ position: absolute; top: 55px; right: 0px; }
+.f_bottom .sns_icon ul{ width: 216px; height: 45px; text-align: center;}
+.f_bottom .sns_icon li{ display: inline-block; text-align: center;}
+.sns_icon a{ position: relative; }
+.sns_icon .hover_icon{ opacity: 0; position: absolute; right: 0; }
+.sns_icon li:hover .hover_icon{ opacity: 1; }
+
+
+
+/* scrolltop button */
+aside{ z-index: 11; display: none; width: 60px; height: 60px; background-color: #000; text-align: center; position: absolute; bottom: 235px; right: 150px; position: fixed; }
+aside img{ position: relative; top: 8px; }
+aside p{ color: #fff; font-size: 18px; line-height: 30px; font-family: 'Noto Sans KR'; font-weight: 500; }

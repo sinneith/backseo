@@ -1,0 +1,61 @@
+/* review.html */
+.away{ position: absolute; left: -999em; }
+#search_box02{ width: 600px; height: 50px; border: 1px solid #ccc; box-sizing: border-box; font-size: 18px; }
+#sub_contents > .search{ margin-bottom: 0; }
+#sub_contents > .search > input{ width: 640px; }
+#sub_contents > .search > button{ width: 150px; float: right; margin-right: 0; }
+#sub_contents .board_list{ margin: 50px auto; width: 100%; border-spacing: 0; text-align: center; }
+#sub_contents .board_list th{ border-top: 1px solid #ededed; border-bottom: 1px solid #ededed; padding: 10px; box-sizing: border-box; font-size: 20px; color: #666; font-weight: 500; }
+#sub_contents .board_list .left_th{ border: none; border-bottom: 1px solid #ededed; }
+#sub_contents .board_list .left_td{ text-align: left; }
+#sub_contents .board_list .left_td a{ display: block; line-height: 50px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #666; font-size: 20px; }
+#sub_contents .board_list td{ padding: 10px 0; box-sizing: border-box; border-bottom: 1px solid #ededed; font-size: 20px; line-height: 40px; color: #666; }
+#sub_contents .board_list .first{ background-color: #ededed; }
+#sub_contents .board_list .first .title{ width: 550px; }
+
+
+/* review_view.html */
+#sub_contents .notice_view{ width: 100%; margin-top: 100px; text-align: left; border-spacing: 0; }
+#sub_contents .notice_view th{ font-size: 26px; width: 10%; color: #999; font-weight: 100; }
+#sub_contents .notice_view td{ font-size: 26px; color: #999; }
+#sub_contents .notice_view td:first-child{ text-align: left; box-sizing: border-box; }
+#sub_contents .notice_view tr:first-child td{ font-size: 40px; color: #666; font-weight: 500; }
+#sub_contents .notice_view tr:nth-child(2) th, #sub_contents .notice_view tr:nth-child(2) td{ border-bottom: 2px dotted #ccc; padding: 30px 0; box-sizing: border-box; }
+
+#sub_contents .text{ margin-top: 100px; font-size: 28px; line-height: 50px; color: #666; text-align: justify; padding-bottom: 150px; box-sizing: border-box; border-bottom: 1px dotted #ccc; }
+#sub_contents .text h4{ font-size: 32px; font-weight: 100; margin-bottom: 50px; }
+#sub_contents .text img{ display: block; margin: 0 auto 100px; }
+#sub_contents .writer02{ width: 100%; display: inline-block; }
+#sub_contents .writer02 ul{ float: right; }
+#sub_contents .writer02 li{ float: left; color: #666; font-size: 30px; margin: 50px 50px 0 20px; }
+#sub_contents .writer02 li:first-child{ margin-right: 10px; font-weight: 900; }
+
+
+/* review_write.html */
+#sub_contents .write_box{ text-align: left; font-size: 20px; border: 1px solid #ccc; width: 100%; padding: 20px; box-sizing: border-box; }
+#sub_contents .write_box td{ width: 70%; padding: 0 20px; box-sizing: border-box;}
+#sub_contents .write_box th{ width: 15%; height: 50px; padding-left: 20px; }
+#title_write{ width: 100%; height: 40px; border: 1px solid #ccc; }
+#title_write:focus{ outline: none; }
+
+#sub_contents .text_zone{ margin-top: 10px; width: 100%; height: 500px; border: 1px solid #ccc; text-align: center; }
+#sub_contents textarea{ width: 900px; height: 400px; margin-top: 50px; border: none; } 
+#sub_contents textarea:focus{ outline: none;}
+#sub_contents .file_zone{ width: 100%; height: 70px; border: 1px solid #ccc; margin-top: 10px; padding: 20px; box-sizing: border-box; }
+#sub_contents .file_zone > input[type=file]{ width: 100%; font-size: 18px; }
+
+.f_btn{ text-align: center; }
+.f_btn > button, .f_btn > input{ width: 150px; height: 60px; margin: 0 10px 100px 0; font-size: 18px; background-color: #b0a0e3; border: none; color: #fff; }
+.f_btn > input{ cursor: pointer; margin-right: 0; background-color: #fff; color: #b0a0e3; border: 1px solid #b0a0e3; }
+
+
+/* button */
+#sub_contents .page_btn .btn_wrap .list_btn{ background-color: #b1a7d0; color: #fff; }
+#sub_contents .page_btn .page_num .numList, #sub_contents .page_btn .page_num b{ border: 1px solid #ccc; width: 40px; height: 40px; text-align: center; line-height: 40px; }
+#sub_contents .page_btn .page_num b{ margin-right: 8px; font-size: 20px; color: #fff; background-color: #b1a7d0; font-weight: 100; border: none; height: 38px; }
+#sub_contents .page_btn .page_num .prev_page, #sub_contents .page_btn .page_num .next_page{ padding-right: 20px; }
+#sub_contents .page_btn .page_num .prev_page a, #sub_contents .page_btn .page_num .next_page a{ color: #b1a7d0; }
+#sub_contents .page_btn .prev_page, #sub_contents .page_btn .next_page{ font-size: 20px; }
+#sub_contents .my_btn{ position: relative; }
+#sub_contents .my_btn .write{ position: absolute; top: -45px; right: 0; float: right; margin-right: 5px; border: none; background-color: #b1a7d0; width: 120px; height: 50px; line-height: 50px; text-align: center; }
+#sub_contents .my_btn .write a{ color: #fff; font-size: 18px; }

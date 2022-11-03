@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.join{ background-image: url(../../images/tnav/login_bg.jpg); }
+
+#sub_menu{ background-color: #999; }
+#sub_contents h3{ font-size: 50px; text-align: center; margin: 100px 0 30px 0; }
+#sub_contents h5{ width: 100%; height: 50px; text-align: center; font-size: 18px; }
+#sub_contents h5 span{ color: #333; font-size: 16px; }
+#sub_contents .star{ position: relative; top: 3px; color: #b0a0e3; }
+#sub_contents .away{ position: absolute; left: -999em; }
+#sub_contents .joinBox{ width: 100%; }
+
+
+/* table */
+#sub_contents table{ width: 900px; margin: 0 auto; border-top: 2px solid #999; border-spacing: 0;}
+#sub_contents .joinBox th{
+    width: 20%; 
+    border: none; border-bottom: 1px solid #ccc; 
+    border-right: 1px solid #ccc;
+    text-align: left; padding-left: 20px; box-sizing: border-box;
+    font-size: 18px; font-weight: 500; line-height: 70px;
+}
+#sub_contents .joinBox th.none{ padding-left: 35px; }
+#sub_contents .joinBox td{ width: 80%; box-sizing: border-box; border: none; border-bottom: 1px solid #ccc; text-align: left; padding-left: 20px; }
+#sub_contents .box01{ width: 250px; height: 45px; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+#sub_contents .box02{ width: 80px; height: 45px; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+#sub_contents .box02 + label{ margin-right: 20px; }
+#sub_contents .box03{ width: 200px; height: 45px; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; }
+#sub_contents button[type=button]{ width: 250px; height: 45px; border: none; background-color: #b1a7d0; color: #fff; font-size: 16px; } 
+
+#sub_contents .joinBox .address{ width: 100%; height: 130px; }
+#postCode{ margin-bottom: 10px; }
+#layer{ display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch; }
+#btnCloseLayer{ cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1 }
+
+#sub_contents .radio{ padding: 15px 10px; }
+#sub_contents input[type=radio] + label{ position: relative; top: -2px; margin-right: 20px; }
+#sub_contents .joinBox .last{ border-bottom: 1px solid #333; }
+#sub_contents button[type=submit]{ display: block; width: 400px; height: 70px; margin: 0 auto 200px; border: none; background-color: #b1a7d0; font-size: 20px; color: #fff; }
+#sub_contents h5{ width: 900px; margin: 10px 0 0 228px; text-align: left; font-weight: 500; }
